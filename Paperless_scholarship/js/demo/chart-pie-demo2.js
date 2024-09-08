@@ -41,7 +41,7 @@ var myPieChart = new Chart(ctx, {
         labels: ["Verified Applications", "Payment Disbursed", "Pending Payment"],
         datasets: [{
             data: [30000, 25000, 5000], // Data corresponding to your elements
-            backgroundColor: ['#4e73df', '#1cc88a', '#f6c23e'], // Colors from the image
+            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'], // Colors from the image
             hoverBackgroundColor: ['#2e59d9', '#17a673', '#f6b93e'], // Hover colors
             borderColor: '#ffffff', // White border
         }],

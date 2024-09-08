@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSVTU Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6ef;
+        }
+
+        .header {
+            background-color: #224abe;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            max-height: 50px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 10px;
+            color: black;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .login-container h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .login-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .login-option {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 9px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .login-option img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-top: 15px;
+        }
+
+        .login-option h3 {
+            font-size: 16px;
+            padding: 15px;
+            margin: 0;
+            color: black;
+        }
+
+        .login-option button {
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .login-option button a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .student {
+            background-color: #337ab7;
+            border-radius:30px;
+        }
+
+        .department {
+            background-color: #5bc0de;
+            border-radius:30px;
+        }
+
+        .login-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #f08d49;
+            border: none;
+            color: black;
+            font:bolder;
+            border-radius: 80px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #e07c3f;
+        }
+
+        /* Button hover effect */
+        .login-option button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="img/AICTE.png" alt="CSVTU Logo">
+        <h1>Prime Minister Special Scholarship Scheme</h1>
+    </div>
+
+    <div class="login-container">
+        <h2>Select Login Type</h2>
+        <div class="login-box">
+            <div class="login-option">
+                <img src="img/Student.png" alt="Student Login">
+                <button><a href="register.html"><h3 class="student">Student Login</h3></a></button>
+            </div>
+            <div class="login-option">
+                <img src="img/Administrator.png" alt="Department Login">
+                <button><a href="register2.html"><h3 class="department">Administrator Login</h3></a></button>
+            </div>
+        </div>
+    </div>
+
+    <button class="home-button">Home</button>
+
+</body>
+</html>
